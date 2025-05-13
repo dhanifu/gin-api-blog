@@ -1,0 +1,35 @@
+server:
+  internalPort: 8080
+  externalPort: 8080
+  runMode: debug
+
+logger:
+  filePath: logs
+  encoding: json
+  level: debug
+  logger: zerolog
+
+postgres :
+  host : 8.8.8.8
+  port : 5432
+  user : postgres
+  password : kontolodon
+  dbName : gin_api_blog
+  sslMode : disable
+  maxIdleConns: 15
+  maxOpenConns: 100
+  connMaxLifetime: 5
+
+password:
+  includeChars: true
+  includeDigits: true
+  minLength: 6
+  maxLength: 64
+  includeUppercase: true
+  includeLowercase: true
+
+jwt:
+  secret: "d88dd46ef2cfa9b08ab60b875cb0d2cb1867bcc9bf44234a8cb0cd757b099216"
+  refreshSecret: "ed88d6439f127a8effe39f45ad5066457bba1295a08c32f96aa2f936af00322b"
+  accessTokenExpireDuration: 1440
+  refreshTokenExpireDuration: 60
