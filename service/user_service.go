@@ -6,7 +6,7 @@ import (
 	"gin-api-blog/data/db"
 	"gin-api-blog/data/models"
 	"gin-api-blog/pkg/logging"
-	"gin-api-blog/pkg/logging/service_errors"
+	"gin-api-blog/pkg/service_errors"
 
 	"github.com/jmoiron/sqlx"
 	"golang.org/x/crypto/bcrypt"

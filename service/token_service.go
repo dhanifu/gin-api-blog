@@ -5,7 +5,7 @@ import (
 	"gin-api-blog/config"
 	"gin-api-blog/constants"
 	"gin-api-blog/pkg/logging"
-	"gin-api-blog/pkg/logging/service_errors"
+	"gin-api-blog/pkg/service_errors"
 	"time"
 
 	"github.com/golang-jwt/jwt/v5"

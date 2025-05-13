@@ -1,7 +1,7 @@
 package helpers
 
 import (
-	"gin-api-blog/pkg/logging/service_errors"
+	"gin-api-blog/pkg/service_errors"
 	"net/http"
 )
 
